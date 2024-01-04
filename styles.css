@@ -165,3 +165,57 @@ img{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: 70px;
 }
+
+/*my work sivu*/
+
+.work{
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.work__wrapper{
+    display: flex;
+    margin: auto;
+    height: auto;
+    width: auto;
+    align-content: center;
+    flex-direction: row;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+}
+
+.work__card{
+    float: left;
+    margin: 10px;
+    margin-left: 50px;
+    height: 425px;
+    width: 300px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: rgb(95, 114, 114) ;
+    transition: 0.3s ease-in;
+    border: none;
+    cursor: pointer;
+
+}
+
+.work__card:hover{
+    background-color: rgb(89, 108, 94);
+}
+
+.work__card h2{
+    background-color: #2f2d34;
+    justify-content: center;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    
+}
