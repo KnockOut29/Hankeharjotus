@@ -7,6 +7,7 @@
     
         <title>My Website</title>   
     </head>
+    
     <body>
         <!--Navbar-->
         <div class="navbar">
@@ -21,25 +22,59 @@
         </div>
         <hr>
         <!--hero-->
-        
+        <!--popup-->
+        <div class="popup" id="popup-1">
+            <div class="overlay">
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup()">&times;</div>
+                    <h1>Art</h1>
+                    <img src="Snake and rose.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="popup-2">
+            <div class="overlay">
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup()">&times;</div>
+                    <h1>Title</h1>
+                    <p>ei tuu kesää</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="popup-3">
+            <div class="overlay">
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup()">&times;</div>
+                    <h1>Title</h1>
+                    <p>hyvin menee</p>
+                </div>
+            </div>
+        </div>
+
         <div class="work" id="work">
             <div class="work__wrapper">
                 
-               <button class="work__card">
+               <button class="work__card" onclick="togglePopup()">
                     <h2>Art</h2>
-                    <div class="popup"></div>
+                   
                </button>
+               
 
-                <button class="work__card">
+                <button class="work__card" onclick="togglePopup()">
                     <h2>Pictures</h2>
                 </button>
 
-                <button class="work__card">
-                    <h2>Websites</h2>
+                <button class="work__card" onclick="togglePopup()">
+                    <h2>Coding</h2>
                 </button>
             </div>
            
         </div>
+
+        <script src="JS app.js"></script>
+    
     
     </body>
     
