@@ -116,6 +116,7 @@ span{
     font-size: 5rem;
     font-weight: 540;
     
+    
 }
 
 .portfolio-container{
@@ -135,6 +136,11 @@ span{
 
 .porfolio-box img{
     width: 100%;
+    transition: .5s ease;
+}
+
+.porfolio-box:hover img{
+    transform: scale(1.1);
 }
 
 .porfolio-box .portfolio-layer{
@@ -145,8 +151,35 @@ span{
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
     padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.porfolio-box:hover .portfolio-layer{
+    transform: translateY(0);
+}
+
+.portfolio-layer h4{
+    font-size: 4rem;
+}
+
+.portfolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.portfolio-layer a i{
+    font-size: 2rem;
+    color: var(--second-bg-color);
+
 }
