@@ -35,6 +35,10 @@ section{
 
 }
 
+section p{
+    font-size: 2rem;
+}
+
 .header {
     position: fixed;
     top: 0;
